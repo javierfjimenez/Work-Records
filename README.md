@@ -29,16 +29,19 @@ Sistema de registro de horas de trabajo para freelancers, desarrollado en Larave
 
 ## 1️⃣ Clonar el repositorio
 bash
-git clone https://github.com/tuusuario/work-records.git
-cd work-records
+
+git clone https://github.com/javierfjimenez/Work-Records
+cd Work-Records
 
 ## 2️⃣ Instalar dependencias
 bash
+
 composer install
 npm install && npm run build
 
 ## 3️⃣ Configurar variables de entorno
 bash
+
 cp .env.example .env
 php artisan key:generate
 
@@ -126,9 +129,6 @@ Respuesta esperada: {
 Método: GET
 Endpoint: /work_records
 Headers: Authorization: Bearer tu_token_generado
-
-curl -X GET "http://127.0.0.1:8000/api/work_records/export" \
-     -H "Authorization: Bearer your_generated_token"
 
 Respuesta esperada:
 [
