@@ -78,6 +78,10 @@
                                 @endforelse
                             </tbody>
                         </table>
+                        
+                        <div class="mt-4">
+    {{ $workRecords->links() }}
+</div>
                     </div>
                 </div>
             </div>

@@ -13,7 +13,7 @@ class WorkRecordController extends Controller
     use AuthorizesRequests;
     public function index()
     {
-        $workRecords = WorkRecord::byUser(auth()->id())->latest()->get();
+        $workRecords = WorkRecord::byUser(auth()->id())->latest()->paginate(5);
         return view('work_records.index', compact('workRecords'));
     }
 
