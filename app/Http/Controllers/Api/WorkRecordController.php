@@ -63,7 +63,7 @@ class WorkRecordController extends Controller
 
         $workRecord->delete();
 
-        return response()->json(['message' => 'Work record deleted']);
+        return response()->json(['message' => 'Registro De Trabajo Eliminado']);
     }
 
     public function export(Request $request)

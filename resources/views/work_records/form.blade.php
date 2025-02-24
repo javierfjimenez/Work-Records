@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-        {{ isset($workRecord) ? __('Edit Work Record') : __('Create Work Record') }}
+        {{ isset($workRecord) ? __('Editar Registro De Trabajo') : __('Crear Registro De Trabajo') }}
         </h2>
     </x-slot>
 
@@ -12,7 +12,7 @@
                     <section>
                         <header>
                             <h2 class="text-lg font-medium text-gray-900">
-                                {{ isset($workRecord) ? __('Edit Work Record') : __('Create Work Record') }}
+                                {{ isset($workRecord) ? __('Editar Registro De Trabajo') : __('Crear Registro De Trabajo') }}
                             </h2>
 
                             <!-- <p class="mt-1 text-sm text-gray-600">
