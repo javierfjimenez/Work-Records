@@ -62,6 +62,6 @@ class ExportWorkRecordsJob implements ShouldQueue
     Mail::to($this->user->email)->send(new WorkRecordsExportMail($filePath));
 
     // Eliminar el archivo después de enviarlo
-    // Storage::delete($filePath);
+    Storage::delete($filePath);
 }
 }
