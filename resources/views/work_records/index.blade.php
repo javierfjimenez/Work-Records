@@ -29,7 +29,7 @@
                     @endif
 
                     <div class="overflow-x-auto">
-                        <table class="table-fixed border-collapse table-auto w-full text-lg leading-loose text-center">
+                        <table class="border-collapse table-auto w-full text-lg leading-loose text-center">
                             <thead class="bg-gray-200 border-b">
                                 <tr>
                                     <th class="p-4 text-left">ID</th>
